@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-import express from 'express';
+import express, { json } from 'express';
 import cors from 'cors';
 import routes from './routes';
 import { errors } from 'celebrate';
@@ -11,7 +11,7 @@ import Sentry from './config/sentry';
 const app = express();
 
 app.use(cors());
-app.use(express.json());
+app.use(json());
 
 /**
  * Rota: Endereço completo da requisição 
