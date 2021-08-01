@@ -312,7 +312,7 @@ export default function CreatePoint({ items, ufs, googleMapKey, endPointApi }: C
 }
 
 export const getStaticProps: GetStaticProps = async () => { 
-  const endPointApi = process.env.ENDPOINT_API;
+  const endPointApi = process.env.NEXT_PUBLIC_ENDPOINT_API;
   const { data: items } = await axios.get<Item[]>(`${endPointApi}/items`);
 
   const { data: ufs } = await axios.get<UfIBGEResponse[]>('https://servicodados.ibge.gov.br/api/v1/localidades/estados');
