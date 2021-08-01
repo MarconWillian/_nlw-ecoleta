@@ -30,6 +30,8 @@
 
   ## :minidisc: Descrição
   Ele foi publicado em como produção: [api.ecoleta.marcon.run](https://api.ecoleta.marcon.run/).<br>
+    - Collection Postman: [getpostman.com/collections/9479a46ad574fb03b511](https://www.getpostman.com/collections/9479a46ad574fb03b511)
+    - Docs on Postman: [documenter.getpostman.com/view/10671045/Tzsfm5Nd](https://documenter.getpostman.com/view/10671045/Tzsfm5Nd)
 
   ****
   Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE][license-link] para mais detalhes.

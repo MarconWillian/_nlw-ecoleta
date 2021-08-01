@@ -25,6 +25,8 @@
   O projeo em si é um sistema de coleta de lixos e descartaveis, unindo as empresas que fazem estas coletas com as pessoas que precisa descartar algo, sendo que a empresa vai usar a langing page para cadastrar seus pontos, e o usuário vai poder ver os pontos pelo app.
 
   - Backend: [api.ecoleta.marcon.run](https://api.ecoleta.marcon.run/)
+    - Collection Postman: [getpostman.com/collections/9479a46ad574fb03b511](https://www.getpostman.com/collections/9479a46ad574fb03b511)
+    - Docs on Postman: [documenter.getpostman.com/view/10671045/Tzsfm5Nd](https://documenter.getpostman.com/view/10671045/Tzsfm5Nd)
   - Frontend: [ecoleta.marcon.run](https://api.ecoleta.marcon.run/)
   - Mobile App (android): [Play Store][link-mobile-app]
   
