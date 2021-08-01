@@ -1,0 +1,43 @@
+#####################
+# Deploy on GCP Run #
+#####################
+
+.deploy-gcp:
+  image: google/cloud-sdk
+  services:
+    - docker:dind
+  extends:
+    - .auth-gcp
+  stage: deploy
+  tags:
+    - dind
+  script:
+    - gcloud run deploy $GCP_SERVICE_NAME --project $GCP_PROJECT_ID --region $GCP_REGION --image $GCP_IMAGE --platform managed
+
+
+deploy:production-gcp:
+  needs: ["build:gcp"]
+  extends:
+    - .filter:rules:push-production-branch
+    - .deploy-gcp
+  variables:
+    TYPE_PROJECT: "production"
+
+####################
+# Deploy on Vercel #
+####################
+
+deploy:production-vercel:
+  stage: deploy
+  image: dockette/vercel
+  services:
+    - docker:dind
+  tags:
+    - dind
+  extends:
+    - .filter:rules:push-vercel-production-branch
+  script:
+    - vercel --prod --token=$VERCEL_TOKEN --scope "$VERCEL_SCOPE"
+  variables:
+    VERCEL_ORG_ID: $VERCEL_ORG_ID
+    VERCEL_PROJECT_ID: $VERCEL_PROJECT_ID

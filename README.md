@@ -24,10 +24,8 @@
   ## :minidisc: Descrição
   O projeo em si é um sistema de coleta de lixos e descartaveis, unindo as empresas que fazem estas coletas com as pessoas que precisa descartar algo, sendo que a empresa vai usar a langing page para cadastrar seus pontos, e o usuário vai poder ver os pontos pelo app.
 
-  - Backend: [server-ecoleta.marconwillian.dev](https://server-ecoleta.marconwillian.dev/)
-  - Backend Develop: [server-ecoleta.marconwillian.dev/sandbox/](https://server-ecoleta.marconwillian.dev/sandbox/)
-  - Frontend: [ecoleta.nlw.marconwillian.dev](https://ecoleta.nlw.marconwillian.dev/)
-  - Frontend Develop: [develop.ecoleta.nlw.marconwillian.dev](https://develop.ecoleta.nlw.marconwillian.dev/)
+  - Backend: [api.ecoleta.marcon.run](https://api.ecoleta.marcon.run/)
+  - Frontend: [ecoleta.marcon.run](https://api.ecoleta.marcon.run/)
   - Mobile App (android): [Play Store][link-mobile-app]
   
   ****
